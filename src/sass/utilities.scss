@@ -1,0 +1,44 @@
+.has-background-accent, .is-accent {
+  background-color: $accent;
+}
+
+.has-background-transparent {
+  background-color: transparent;
+}
+
+.has-background-transition {
+  transition: background-color 0.5s ease;
+}
+
+.has-text-accent {
+  color: $accent;
+}
+
+.has-text-transition {
+  transition: color 0.5s ease;
+}
+
+.is-not-opaque {
+  opacity: 0;
+}
+
+.is-opaque {
+  opacity: 1;
+}
+
+.pagination-link.is-current {
+  cursor: default;
+  pointer-events: none;
+  background-color: $accent;
+  border-color: $accent;
+}
+
+.pagination-link.is-disabled {
+  cursor: default;
+  pointer-events: none;
+  background-color: #dedede;
+}
+
+.progress.is-accent:indeterminate {
+  background-image: linear-gradient(to right, $accent 30%,#ededed 30%)
+}

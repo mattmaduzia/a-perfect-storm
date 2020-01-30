@@ -1,25 +1,40 @@
 {
-  "name": "my-resume",
+  "name": "a-perfect-storm",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.7.6",
+    "@mdi/font": "^4.7.95",
+    "@popperjs/core": "^2.0.1",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^8.0.3",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "axios": "^0.19.2",
+    "babel-plugin-import": "^1.13.0",
+    "bulma": "^0.8.0",
+    "bulma-helpers": "^0.3.8",
+    "d3": "^5.15.0",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
+    "react-transition-group": "^4.3.0",
+    "topojson-client": "^3.1.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "set NODE_ENV=development && run-p start:**",
+    "start:app": "set NODE_ENV=development && react-scripts start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:cypress": "cypress open",
+    "build-sw": "node ./src/sw-build.js",
+    "build": "react-scripts build && yarn run build-sw"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +50,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@types/d3": "^5.7.2",
+    "@types/lodash": "^4.14.149",
+    "@types/react-transition-group": "^4.2.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-webpack-alias": "*",
+    "cypress": "3.8.3",
+    "eslint-plugin-cypress": "^2.8.1",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "http-proxy-middleware": "^0.20.0",
+    "react-test-renderer": "^16.12.0"
   }
 }

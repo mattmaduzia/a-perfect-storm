@@ -1,0 +1,102 @@
+/** AppChoropleth **/
+#map {
+  z-index: 3;
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  transform: translate3d(0, 0, 0);
+}
+
+.state {
+  fill: none !important;
+}
+
+
+/** AppFooter **/
+.footer {
+  background-color: #f4f4f4;
+}
+
+
+/** AppHeader **/
+.banner__container {
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $accent;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+
+/** AppMessage **/
+.app-message {
+  overflow: hidden;
+  max-height: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/** AppPanel **/
+.app-panel {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/** AppTooltip **/
+#tooltip {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+  transition: 0.1s ease opacity;
+  opacity: 0;
+  pointer-events: none;
+  top: -1000px;
+  left: -1000px;
+}
+
+
+/** AppTopList **/
+.top-list {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+
+  .panel-icon {
+    width: 2em;
+  }
+
+}
+
+.top-list .panel-subsection {
+  z-index: 5;
+  transition: 0.5s ease height;
+  height: 0;
+  padding-top: 0;
+  padding-bottom:0;
+  overflow: hidden;
+  background-color: white;
+
+  &.is-expanded {
+    height: 400px;
+    overflow-y: scroll;
+  }
+}
+
+.top-list__entry {
+  cursor: pointer;
+  &:nth-child(even) {
+    background-color: #dedede;
+  }
+  &:hover {
+    background-color: $accent ;
+    color: white;
+  }
+}

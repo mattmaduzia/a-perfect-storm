@@ -1,11 +1,6 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -17,9 +12,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "jsx": "preserve"
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "src/sw*"
   ]
 }

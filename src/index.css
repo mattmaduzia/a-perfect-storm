@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hexbin-container:hover .hexbin-hexagon {
+  transition: 200ms;
+  stroke: orange;
+  stroke-width: 1px;
+  stroke-opacity: 1;
+}
+
+.hexbin-tooltip {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.hexbin-hexagon {
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.city-marker {
+  transition: 0.3s ease all;
+}
+
+.city-marker:hover {
+  fill: #000;
+  stroke: #fff;
+  opacity: 1 !important;
+}

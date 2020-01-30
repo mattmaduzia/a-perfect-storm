@@ -1,0 +1,46 @@
+.expand-enter {
+  max-height: 0;
+  margin-bottom: 0;
+}
+
+.expand-enter-active {
+  transition: max-height 500ms, margin-bottom 500ms;
+  max-height: 108px;
+  margin-bottom: 20px;
+}
+
+.expand-enter-done {
+  max-height: 128px;
+  margin-bottom: 20px;
+}
+
+.expand-exit {
+  max-height: 128px;
+  margin-bottom: 20px;
+}
+
+.expand-exit-active {
+  transition: max-height 500ms, margin-bottom 500ms;
+  max-height: 0;
+  margin-bottom: 0;
+}
+
+.expand-exit-done {
+  max-height: 0;
+}
+
+.fade-in-left-enter {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.fade-in-left-enter-active {
+  transition: opacity 1s, transform 1s;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-left-enter-done {
+  opacity: 1;
+  transform: translateX(0);
+}

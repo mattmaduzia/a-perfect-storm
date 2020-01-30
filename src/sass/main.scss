@@ -1,0 +1,10 @@
+@import "./variables";
+@import "~bulma/bulma.sass";
+@import "~bulma-helpers/bulma-helpers.sass";
+@import "./utilities";
+@import "./components";
+@import "./transitions";
+
+.app.columns {
+  z-index: 4;
+}
