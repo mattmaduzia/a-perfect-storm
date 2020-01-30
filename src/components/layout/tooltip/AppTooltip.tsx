@@ -6,6 +6,7 @@ import { createPopper } from "@popperjs/core";
 /**
  * Tooltip containing individual county information
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppTooltip() {
 

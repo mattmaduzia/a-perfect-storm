@@ -91,7 +91,7 @@ describe("Helper class that statically queries county data", () => {
         type: WeatherType.SnowDepth5,
       columnType: WeatherColumn.snow_depth_5,
       columnPeriod: PeriodColumn.annual,
-    }
+    };
     const d = {
       properties: {
         weather: {

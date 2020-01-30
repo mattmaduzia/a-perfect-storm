@@ -9,6 +9,7 @@ export interface AppTopListSortButtonProps {
  * "Button" that changes sort orientation of top-counties list
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppTopListSortButton(props: AppTopListSortButtonProps) {
   return ( <span

@@ -18,6 +18,7 @@ export interface MapHookProps {
  * @param deps
  * @param type
  * @param period
+ * @author Matt Maduzia
  */
 export function useMap(
   deps: MapDeps,

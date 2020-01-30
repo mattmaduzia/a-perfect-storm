@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import "@mdi/font/css/materialdesignicons.css";
 
 import "./sass/main.scss";
-import './index.css';
 
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';

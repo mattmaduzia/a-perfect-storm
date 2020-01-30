@@ -12,6 +12,7 @@ export interface AppMessageProps {
  * A notice to the user shown prominently in the window
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppMessage(props: AppMessageProps) {
   const { isAnimating, setIsAnimating } = useIntersectionObserver({ delayOnIntersect: 500, intersectEl: "message__container" });

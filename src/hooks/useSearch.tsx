@@ -7,6 +7,7 @@ import { useEffect } from "react";
  * @param topCounties
  * @param setFiltered
  * @param search
+ * @author Matt Maduzia
  */
 export function useSearch({ type, period, sortAsc, summary}: TopCounties, setFiltered: Function, search: string = "") {
   useEffect(() => {

@@ -10,6 +10,7 @@ export interface AppPanelTabsProps {
  * Switchable panel tabs
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppPanelTabs(props: AppPanelTabsProps) {
   const handeClick = (e: any, index: number) => {

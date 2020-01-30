@@ -1,5 +1,4 @@
 import React, { useReducer, Dispatch, useEffect } from 'react';
-import '../App.css';
 import { AppChoropleth } from "./map/AppChoropleth";
 import { AppAxes } from "./layout/AppAxes";
 import { AppPeriodMenu } from "./layout/AppPeriodMenu";
@@ -33,6 +32,7 @@ export const DispatchContext = React.createContext(null as unknown as Dispatch<a
 /**
  * Main app component
  * @constructor
+ * @author Matt Maduzia
  */
 const App: React.FC = () => {
   const [state, dispatch] = useReducer(reducer, { type: null, period: null });

@@ -11,6 +11,7 @@ export interface AppPaginationLinkProps {
  * A single numbered link in a pagination component
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppPaginationLink(props: AppPaginationLinkProps) {
   const handleClick = (e: any) => {

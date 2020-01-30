@@ -17,6 +17,7 @@ interface PeriodBlock {
  * Menu containing choices of weather time-periods
  * @param period
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppPeriodMenu({ period }: AppPeriodMenuProps) {
   const periods: PeriodBlock[] = [

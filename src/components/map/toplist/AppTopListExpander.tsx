@@ -10,6 +10,7 @@ export interface AppTopListExpanderProps {
  * Container that expands to show the top county list on click
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppTopListExpander(props: AppTopListExpanderProps) {
   const [active, setActive] = useState(false);

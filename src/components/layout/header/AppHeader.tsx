@@ -9,6 +9,7 @@ export interface AppHeaderProps {
  * A header introducing the page
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppHeader(props: AppHeaderProps) {
   const [background, setBackground] = useState({ color: "blue" } as any);
@@ -16,12 +17,14 @@ export function AppHeader(props: AppHeaderProps) {
 
   useEffect(() => {
     const getBackgroundImage = async () => {
-      const image = await import("../../../assets/thunderstorm.jpg");
-      setBackground({ backgroundImage: `url('${ image.default }')` });
+      const image = new Image();
+      image.onload = () => {
+        setBackground({ backgroundImage: `url('${ image.src }')` });
+        setIsLoaded(true);
+      };
+      image.src = (await import("../../../assets/thunderstorm.jpg")).default;
     };
-    getBackgroundImage().then(() => {
-      setIsLoaded(true);
-    });
+    getBackgroundImage();
   }, []);
 
   return ( <section
@@ -35,7 +38,7 @@ export function AppHeader(props: AppHeaderProps) {
             <h1 className="is-size-1 title has-text-white">
               A Perfect Storm
             </h1>
-            <h2 className="is-size-4 has-text-accent subtitle">
+            <h2 className="is-size-4 has-text-accent has-text-weight-bold subtitle">
               U.S. Weather Visualization By County
             </h2>
           </div>

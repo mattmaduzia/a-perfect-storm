@@ -13,6 +13,7 @@ export interface AppPaginationProps {
  * A basic pagination component
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppPagination({ page, setPage, totalItems, perPage }: AppPaginationProps) {
   const totalPages = Math.ceil(totalItems / perPage);

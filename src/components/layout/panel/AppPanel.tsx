@@ -10,6 +10,7 @@ export interface AppPanelProps {
  * Generic panel containing links
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppPanel(props: AppPanelProps) {
   return (

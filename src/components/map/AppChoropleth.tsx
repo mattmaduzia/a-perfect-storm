@@ -14,6 +14,7 @@ interface AppChoroplethProps {
  * @param type
  * @param period
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppChoropleth({ type, period }: AppChoroplethProps) {
   const [deps, setDeps] = useState(( () => MapDeps.init() ) as unknown as MapDeps);

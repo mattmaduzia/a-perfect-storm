@@ -13,6 +13,7 @@ export interface AppPanelBlockProps {
  * A single entry in a generic sidebar panel
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppPanelBlock(props: AppPanelBlockProps) {
   const blockClassName = 'panel-block has-text-left' +

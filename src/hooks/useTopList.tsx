@@ -18,6 +18,7 @@ export interface TopListHook {
  * @param type Weather type
  * @param period Time period
  * @param numberShown
+ * @author Matt Maduzia
  */
 export function useTopList(
   deps: MapDeps,

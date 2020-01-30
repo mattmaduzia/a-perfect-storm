@@ -12,6 +12,7 @@ export interface AppTopListSearchProps {
  * Search bar for top counties list
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppTopListSearch(props: AppTopListSearchProps) {
 

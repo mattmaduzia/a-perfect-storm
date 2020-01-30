@@ -9,7 +9,7 @@ describe("Instruction message", () => {
     });
     it("show instructions on viewport intersect", () => {
       cy.get("@message").scrollIntoView();
-      cy.get("@message").expectStyle("max-height", "108px");
+      cy.get("@message").expectStyle("max-height", "128px");
       cy.get("@message").contains("Select a weather-type and time-period to get started.");
     });
     it("hides on clicking close icon", () => {

@@ -2,6 +2,13 @@ import React, { useCallback } from "react";
 import { AppPaginationLink } from "../components/layout/pagination/AppPaginationLink";
 import { AppPaginationEllipsis } from "../components/layout/pagination/AppPaginationEllipsis";
 
+/**
+ * Hook that encapsulates pagination-generation functionality
+ * @param page
+ * @param last
+ * @param setCurrent
+ * @author Matt Maduzia
+ */
 export function usePagination(
   page: number,
   last: number,
@@ -34,10 +41,12 @@ export function usePagination(
         isDisabled={ false }
       />);
     }
+
     // ellipsis if current > 4
     if (page > 3) {
       components.push(<AppPaginationEllipsis/>);
     }
+
     // previous page if current > 2
     if (page > 2) {
       components.push(<AppPaginationLink
@@ -48,7 +57,7 @@ export function usePagination(
       />);
     }
 
-    // CURRENT PAGE
+    // current page
     if (page !== 1 && page !== last) {
       components.push(<AppPaginationLink
         page={ page }
@@ -57,6 +66,7 @@ export function usePagination(
         isDisabled={ false }
       />);
     }
+
     // next page if last - current > 1
     if (last - page > 1) {
       const next = page + 1;
@@ -67,6 +77,7 @@ export function usePagination(
         isDisabled={ false }
       />);
     }
+
     // ellipsis if last - current > 3
     if (last - page > 2) {
       components.push(<AppPaginationEllipsis/>);
@@ -80,6 +91,7 @@ export function usePagination(
       />);
         components.push(<AppPaginationEllipsis/>);
     }
+
     // last page
     if (last !== 1) {
       components.push(<AppPaginationLink
@@ -89,6 +101,7 @@ export function usePagination(
         isDisabled={ false }
       />);
     }
+
     return components;
   }, [page, setCurrent, last]);
 

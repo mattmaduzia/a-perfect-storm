@@ -5,6 +5,12 @@ export interface IntersectionObserverHookProps {
   intersectEl: string;
 }
 
+/**
+ * Hook to facilitate animation on scroll intersection
+ * @param delayOnIntersect
+ * @param intersectEl
+ * @author Matt Maduzia
+ */
 export function useIntersectionObserver({ delayOnIntersect, intersectEl }: IntersectionObserverHookProps) {
 
   const [isAnimating, setIsAnimating] = useState(false);

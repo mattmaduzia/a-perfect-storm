@@ -9,6 +9,7 @@ export interface AppFooterProps {
  * Footer containing attribution information
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppFooter(props: AppFooterProps) {
   return ( <footer className="footer">

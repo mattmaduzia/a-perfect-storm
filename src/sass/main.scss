@@ -8,3 +8,11 @@
 .app.columns {
   z-index: 4;
 }
+
+a {
+  color: $accent;
+}
+
+a:hover, a:visited {
+  color: darken($accent, 10%);
+}

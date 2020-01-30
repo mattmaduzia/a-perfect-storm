@@ -17,6 +17,7 @@ export const AppAxesTabNames = [
  * Displays the axes upon which the weather can be filtered
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppAxes(props: AppAxesProps) {
 

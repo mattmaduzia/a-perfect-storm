@@ -7,7 +7,7 @@ describe("button that changes sort orientation of top counties list", () => {
       let sort = { asc: true };
       const setSortAsc = (newSortAsc: boolean) => {
         sort = { asc: newSortAsc };
-      }
+      };
 
       const { rerender, getByTestId } = render(<AppTopListSortButton sortAsc={sort.asc} setSortAsc={setSortAsc}/>);
 

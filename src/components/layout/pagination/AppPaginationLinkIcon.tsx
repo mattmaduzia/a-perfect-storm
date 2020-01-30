@@ -13,6 +13,7 @@ export interface AppPaginationLinkIconProps {
  * A single icon link in a pagination component
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppPaginationLinkIcon(props: AppPaginationLinkIconProps) {
   const handleClick = (e: any) => {

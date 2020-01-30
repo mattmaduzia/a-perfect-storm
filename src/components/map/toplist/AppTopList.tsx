@@ -19,6 +19,7 @@ export interface AppTopListProps {
  * List of top-N counties by weather-type and -period
  * @param props
  * @constructor
+ * @author Matt Maduzia
  */
 export function AppTopList(props: AppTopListProps) {
   const { deps, type, period } = props;
